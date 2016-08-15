@@ -15,16 +15,18 @@ app.get('/items', function(req, res) {
 		if(err) {
 			return res.status(500).json({ message: 'Internal Server Error' });
 		}
+
+		res.json(items);
 	});
 });
 
 app.post('/items', function(req, res) {
-	Item.create({
-		name: req.body.name
-	}, function(err, item) {
+	Item.create({ name: req.body.name }, function(err, item) {
 		if(err) {
 			return res.status(500).json({ message: 'Internal Server Error'});
 		}
+
+		console.log('Item created');
 		return res.status(201).json(item);
 	});
 });
