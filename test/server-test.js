@@ -160,7 +160,6 @@ describe('PUT request on /items/:id', function() {
 		return putError(endpoint, request, 500, done);
 	}
 
-	// Having trouble making this one work... not sure what it is.
 	it('request with nothing in body should return 500 INTERNAL SERVER ERROR', function(done) {
 		serverError(validEndpoint, '', done);
 	});
@@ -174,9 +173,9 @@ describe('PUT request on /items/:id', function() {
 	});
 
 	// TODO -- figure out Mongoose validation
-	// it('request without a string in "name" property should return 500 INTERNAL SERVER ERROR', function(done) {
-	// 	serverError(validEndpoint, { name: [] }, done);
-	// });
+	it('request without a string in "name" property should return 500 INTERNAL SERVER ERROR', function(done) {
+		serverError(validEndpoint, { name: [] }, done);
+	});
 
 	removeSampleItems();
 });

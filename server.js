@@ -35,7 +35,7 @@ app.put('/items/:id', function(req, res) {
 	Item.findOneAndUpdate({ _id: req.params.id }, { name: req.body.name }, function(err, item) {
 		
 		// TODO -- figure out validation thorugh Mongoose
-		if(err || !req.body.name) {
+		if(err || !req.body.name || typeof req.body.name !== 'string') {
 			return res.status(500).json({ message: 'Internal Server Error' });
 		}
 
