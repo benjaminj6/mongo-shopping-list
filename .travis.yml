@@ -8,11 +8,11 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
-deploy:
-  provider: heroku
-  api_key:
-    secure: PoiEjWHzfD+66+AeVnBbsM59YpXHQiF/wNziveOuK6An5GqVo7mSjYUqCuUYkeglApButGGqMB3KYwXLK+WPuklsdF46s7IfWsq3T8U3kzbhLnIaSrXRiQh9fTW6oFuKcdS2w3ouR/m6M3noE+4DYdvsHmfIu8qYDGtkJ53Nv0KIo376ojPX7M/okAvAxqBjUz6go0G/fOuG7p/fiqL5v7s8nm/VUoD4ebGOJ2rDwhBCJRb3dTZS8LuZ6SyyZyEVs2of0j1DiqZ3IS9+fjIOgmHqppu0iCKIYlSH0p0dkH+e4o8OcaoG+TLfDL0e72mKrbVcNWmXANsy5pFeNxohZPWX0eFlFHX3zEF+gtHJ3BjYlHiEkeSIlmAksrQje9bMiXTt3zkvRbMy9XNVdpCKhzsq7rwO4pfO62E4fYBhmIt2SuOSwB92DFTWoxdTWA1SHol7ZPch33QGueAL8wbBjC8ibTiYH25cvNySvoGfGSw4ReUQYvJxC2tgn2/JE1Zb9bqrsFj1scnXgLIT+2PTk1bZIEq41JXc0Q1iz7GR7hFQf6UwcyrAJOhuRjMW0zr3Kpnm9URO/pln9VgwlwTBkjtZUDLu3OKcnvo/MkVvoM3Humxty+ty+aut/6ZeNTDu4zC0GeZuHrfGvDIAyCpXohrzctbR/D4YjDm8+7A3Dj4=
-  app: mongo-shopping-list
-  on:
-    repo: benjaminj6/mongo-shopping-list
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: PoiEjWHzfD+66+AeVnBbsM59YpXHQiF/wNziveOuK6An5GqVo7mSjYUqCuUYkeglApButGGqMB3KYwXLK+WPuklsdF46s7IfWsq3T8U3kzbhLnIaSrXRiQh9fTW6oFuKcdS2w3ouR/m6M3noE+4DYdvsHmfIu8qYDGtkJ53Nv0KIo376ojPX7M/okAvAxqBjUz6go0G/fOuG7p/fiqL5v7s8nm/VUoD4ebGOJ2rDwhBCJRb3dTZS8LuZ6SyyZyEVs2of0j1DiqZ3IS9+fjIOgmHqppu0iCKIYlSH0p0dkH+e4o8OcaoG+TLfDL0e72mKrbVcNWmXANsy5pFeNxohZPWX0eFlFHX3zEF+gtHJ3BjYlHiEkeSIlmAksrQje9bMiXTt3zkvRbMy9XNVdpCKhzsq7rwO4pfO62E4fYBhmIt2SuOSwB92DFTWoxdTWA1SHol7ZPch33QGueAL8wbBjC8ibTiYH25cvNySvoGfGSw4ReUQYvJxC2tgn2/JE1Zb9bqrsFj1scnXgLIT+2PTk1bZIEq41JXc0Q1iz7GR7hFQf6UwcyrAJOhuRjMW0zr3Kpnm9URO/pln9VgwlwTBkjtZUDLu3OKcnvo/MkVvoM3Humxty+ty+aut/6ZeNTDu4zC0GeZuHrfGvDIAyCpXohrzctbR/D4YjDm8+7A3Dj4=
+#   app: mongo-shopping-list
+#   on:
+#     repo: benjaminj6/mongo-shopping-list
     
